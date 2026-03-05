@@ -1,0 +1,5 @@
+FastAPI     →  Backend (serves your chatbot logic)
+Claude API  →  The AI brain
+HTML/CSS/JS →  Simple frontend (just a chat UI, nothing fancy)
+PyPDF2      →  Resume parsing
+Uvicorn     →  Runs your FastAPI server
