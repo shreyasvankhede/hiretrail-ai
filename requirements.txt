@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+pydantic
+groq
+tavily-python
+streamlit
+requests
+pypdf2
+python-dotenv
