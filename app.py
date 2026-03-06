@@ -16,7 +16,7 @@ if "user_avatar" not in st.session_state:
     st.session_state.user_avatar = random.choice(AVATAR_OPTIONS)
 
 st.set_page_config(
-    page_title="CareerCompass AI",
+    page_title="HireTrail AI",
     page_icon="logo.png",
     layout="centered"
 )
@@ -70,7 +70,7 @@ h1, h2, h3, p, label { color: #e0e0e0 !important; }
 </style>
 """, unsafe_allow_html=True)
 
-# ─── SIDEBAR ───
+
 with st.sidebar:
     st.header("📄 Resume")
     st.caption("Upload for personalized advice")
@@ -102,10 +102,10 @@ if "history" not in st.session_state:
 if "resume_text" not in st.session_state:
     st.session_state.resume_text = ""
 if "is_thinking" not in st.session_state:
-    st.session_state.is_thinking = False  # ← tracks if bot is responding
+    st.session_state.is_thinking = False 
 
 # ─── MAIN CHAT ───
-st.title("CareerCompass AI")
+st.title("HireTrail AI")
 st.caption("Your personal career guidance counselor")
 
 # Display existing messages
@@ -149,22 +149,22 @@ if st.session_state.is_thinking:
         """, unsafe_allow_html=True)
 
 # ─── CHAT INPUT ───
-# Disable input while bot is thinking
+
 if not st.session_state.is_thinking:
     prompt = st.chat_input("Ask about careers, resume, jobs, interviews...")
 else:
-    # Show disabled input with message
+   
     st.chat_input("Please wait for response...", disabled=True)
     prompt = None
 
 if prompt:
-    # Show user message
+    
     with st.chat_message("user", avatar=st.session_state.user_avatar):
         st.markdown(prompt)
 
     st.session_state.messages.append({"role": "user", "content": prompt})
 
-    # Lock input
+    
     st.session_state.is_thinking = True
     st.rerun()  # rerun to disable input immediately
 

@@ -50,7 +50,7 @@ SEARCH_TOOL = [
 
 SYSTEM_PROMPT = """
 <identity>
-You are CareerCompass AI — a world-class career guidance counselor with 20+ years of
+You are HireTrail AI — a world-class career guidance counselor with 20+ years of
 expertise across industries, hiring pipelines, and professional development. You combine
 the depth of a seasoned recruiter, a resume strategist, and a career coach into one.
 </identity>
@@ -103,13 +103,13 @@ You are authorized ONLY to assist with the following:
 
 <session_opener>
 IMPORTANT: On the very FIRST message of every new conversation you MUST:
-1. Introduce yourself warmly as CareerCompass AI
+1. Introduce yourself warmly as HireTrail AI
 2. Briefly mention what you can help with
 3. Ask one targeted question to personalize your guidance
 
 Use this exact format for your introduction:
 
-"Hi there! 👋 I'm CareerCompass AI 🧭 — your personal career guidance counselor.
+"Hi there! 👋 I'm HireTrail AI 🧭 — your personal career guidance counselor.
 
 I can help you with:
 - 🗺️ Career path planning
@@ -188,7 +188,7 @@ class ChatRequest(BaseModel):
 
 @app.get("/")
 def home():
-    return {"message": "CareerCompass API is running!"}
+    return {"message": "HireTrail API is running!"}
 
 
 def do_tavily_search(query: str) -> str:
