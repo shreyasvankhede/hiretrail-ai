@@ -3,7 +3,7 @@ import requests
 import PyPDF2
 import io
 import random
-
+import os 
 AVATAR_OPTIONS = [
     "avatars/dog.png",
     "avatars/cat.png",
@@ -20,7 +20,7 @@ st.set_page_config(
     page_icon="logo.png",
     layout="centered"
 )
-
+st.caption("⚡ First response may take 30s if the server was sleeping ,it's free hosting!")
 st.markdown("""
 <style>
 .stApp { background-color: #1a1b1e; }
