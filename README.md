@@ -4,7 +4,12 @@
 HireTrail AI is a conversational AI career assistant that helps students and professionals navigate their career journey. It combines real-time web search, resume analysis, interview preparation, and personalized career advice — all through a single chat interface.
 
 ---
+## Screenshots
 
+---
+
+
+---
 ## ✨ Features
 
 - **💬 Conversational Career Guidance** — Natural multi-turn conversations with full memory, focused exclusively on career topics
@@ -63,7 +68,6 @@ Streamlit displays response
 **1. Clone the repository**
 ```bash
 git clone https://github.com/shreyasvankhede/hiretrail-ai.git
-cd hiretrail-ai
 ```
 
 **2. Create and activate virtual environment**
@@ -91,6 +95,7 @@ TAVILY_API_KEY=your_tavily_api_key
 ```
 
 ### Running the App
+Run on cloud-- https://hiretrail-app.onrender.com/
 
 You need two terminals running simultaneously:
 
