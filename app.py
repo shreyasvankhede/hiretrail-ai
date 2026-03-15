@@ -171,8 +171,9 @@ if prompt:
 # If thinking state is active and last message is from user — fetch response
 if st.session_state.is_thinking and st.session_state.messages[-1]["role"] == "user":
     try:
-            response = requests.post(
-                "http://localhost:8000/chat",
+
+            BACKEND_URL = os.getenv("BACKEND_URL", "http://localhost:8000")
+            response = requests.post(f"{BACKEND_URL}/chat",
                 json={
                     "message": st.session_state.messages[-1]["content"],
                     "history": st.session_state.history,
