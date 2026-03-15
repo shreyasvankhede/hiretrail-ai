@@ -3,7 +3,10 @@
 
 HireTrail AI is a conversational AI career assistant that helps students and professionals navigate their career journey. It combines real-time web search, resume analysis, interview preparation, and personalized career advice — all through a single chat interface.
 
+---
+## Screenshots
 
+---
 
 ---
 ## ✨ Features
